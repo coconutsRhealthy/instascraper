@@ -1,0 +1,15 @@
+*.idea
+*.iml
+.idea
+target
+storage*
+cms/overlays
+site/overlays
+essentials/overlays
+dist/*.gz
+dist/*.tar
+**/.project
+**/.classpath
+**/.settings
+.DS_Store
+**/local.properties
