@@ -12,4 +12,3 @@ dist/*.tar
 **/.classpath
 **/.settings
 .DS_Store
-**/local.properties
