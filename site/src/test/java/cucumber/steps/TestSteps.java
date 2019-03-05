@@ -1,9 +1,7 @@
 package cucumber.steps;
 
 import config.Browser;
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import cucumber.impl.TestStepsImpl;
 import org.openqa.selenium.By;
@@ -25,31 +23,6 @@ public class TestSteps {
 
     TestStepsImpl testStepsImpl = new TestStepsImpl();
 
-    @Given("^A visitor is on the Ingenico homepage$")
-    public void aVisitorIsOnTheIngenicoHomepage() {
-        assertTrue(testStepsImpl.openBrowserAndGoToUrl("http://www.ingenico.com"));
-    }
-
-    @Then("^The visitor sees the Ingenico logo$")
-    public void theVisitorSeesTheIngenicoLogo() {
-        assertTrue(testStepsImpl.logoIsPresent());
-    }
-
-    @When("^The visitor clicks on 'Finance' in the topmenu$")
-    public void theVisitorClicksOnFinanceInTheTopmenu() {
-        assertTrue(testStepsImpl.clickOnFinanceButton());
-    }
-
-    @And("^The visitor clicks on 'Investor Day'$")
-    public void theVisitorClicksOnInvestorDay() {
-        assertTrue(testStepsImpl.clickOnInvestorDayButton());
-    }
-
-    @Then("^The 'Investor Day' page will be shown$")
-    public void theInvestorDayPageWillBeShown() {
-        assertTrue(testStepsImpl.investorDayPageIsDisplayed());
-    }
-
     @Given("^A visitor opens a browser$")
     public void aVisitorOpensABrowser() {
         assertTrue(testStepsImpl.openBrowser());
@@ -62,26 +35,6 @@ public class TestSteps {
         } catch (Exception e) {
 
         }
-
-
-
-
-
-//        url = "http://www.instagram.com/dutchtoy";
-//
-//        testStepsImpl.goToUrl(url);
-//
-//        String followerButtonXpath = "//a[contains(@href, 'following')]";
-//        String xpath2 = "//a[contains(@class, 'notranslate')]";
-//
-//        WebElement followerButton = Browser.getInstance().getDriver().findElement(By.xpath(followerButtonXpath));
-//        followerButton.click();
-//
-//        System.out.println("sjaak");
-
-
-        //teststeps
-
     }
 
     private void theWholeMethod() throws Exception {
